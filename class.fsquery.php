@@ -358,7 +358,12 @@ class FSQuery {
 		$operator = false;
 		$operators = array("^=","$=","*=","=");
 
-		foreach ($operators as $operator) if (strpos($attribute_test, $operator) !== false) break;
+		foreach ($operators as $operator_candidate) {
+			if (strpos($attribute_test, $operator_candidate) !== false) {
+				$operator = $operator_candidate;
+				break;	
+			}
+		}
 
 		if ($operator) {
 
