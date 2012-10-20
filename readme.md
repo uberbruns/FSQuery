@@ -7,10 +7,10 @@ Examples
 
 
 ```php
-// Init
+// INIT
 $fs_query = new FSQuery("/Users/kb/Desktop/Portfolio");
 
-// MIME Type
+// MIME TYPE
 $results = $fs_query->query("image/jpeg");
 
 // FILE- OR FOLDERNAME
@@ -32,8 +32,8 @@ $results = $fs_query->query("#Portfolio > directory");
 $results = $fs_query->query("#Portfolio > directory, #websites #index.html");
 ```
 
-(TIP)
-
+TIP
+---
 Don't let this script run hundred times in a second or on every
 page request. Get your data from the filesystem, process it and
 cache the result. This script is not optimized for speed and/or
