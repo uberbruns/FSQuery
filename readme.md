@@ -42,7 +42,7 @@ efficiency, but for convenience.
 The MIT License
 ---------------
 
-Copyright (c) 2012 Karsten Bruns (karsten@bruns.me)
+Copyright (c) 2012 Karsten Bruns (karsten{at}bruns{dot}me)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
