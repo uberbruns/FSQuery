@@ -1,27 +1,31 @@
 
-Examples
+FSQuery
 ========
 
-## MIME Type
+Examples
+--------
+
+
+#### MIME Type
 $query = $fs_query->query("image/jpeg");
 
-## FILE- OR FOLDERNAME
+#### FILE- OR FOLDERNAME
 $query = $fs_query->query("#PDF");
 
-## EXTENSION
+#### EXTENSION
 $query = $fs_query->query(".gif");
 
-## DESCENDANTS
+#### DESCENDANTS
 $query = $fs_query->query("#websites #index.html");
 
-## CHILD
+#### CHILD
 $query = $fs_query->query("#websites > directory > #index.html");
 
-## ROOT ELEMENTS
+#### ROOT ELEMENTS
 $fs_query = new FSQuery("/Users/kb/Desktop/Portfolio");
 $query = $fs_query->query("#Portfolio > directory");
 
-## COMBINED QUERIES
+#### COMBINED QUERIES
 $query = $fs_query->query("#Portfolio > directory, #websites #index.html");
 
 
@@ -36,7 +40,7 @@ efficiency, but for convenience.
 
 
 The MIT License
-===============
+---------------
 
 Copyright (c) 2012 Karsten Bruns (karsten@bruns.me)
 
