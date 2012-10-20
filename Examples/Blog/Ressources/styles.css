@@ -1,0 +1,22 @@
+	body {
+		font: 100% "Helvetica Neue", "Arial", Verdana, sans-serif;
+		line-height: 140%;
+		padding: 20px;
+	}
+
+	body > * {
+
+		position: relative;
+		max-width: 640px;
+		margin: 0 auto;
+
+	}
+
+	article * {
+		width: 100%;
+		max-width: 640px;
+	}
+
+	article, header {
+		padding: 20px 0px;
+	}
