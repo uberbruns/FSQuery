@@ -7,27 +7,29 @@ Examples
 
 
 ```php
+// Init
+$fs_query = new FSQuery("/Users/kb/Desktop/Portfolio");
+
 // MIME Type
-$query = $fs_query->query("image/jpeg");
+$results = $fs_query->query("image/jpeg");
 
 // FILE- OR FOLDERNAME
-$query = $fs_query->query("#PDF");
+$results = $fs_query->query("#PDF");
 
 // EXTENSION
-$query = $fs_query->query(".gif");
+$results = $fs_query->query(".gif");
 
 // DESCENDANTS
-$query = $fs_query->query("#websites #index.html");
+$results = $fs_query->query("#websites #index.html");
 
 // CHILD
-$query = $fs_query->query("#websites > directory > #index.html");
+$results = $fs_query->query("#websites > directory > #index.html");
 
 // ROOT ELEMENTS
-$fs_query = new FSQuery("/Users/kb/Desktop/Portfolio");
-$query = $fs_query->query("#Portfolio > directory");
+$results = $fs_query->query("#Portfolio > directory");
 
 // COMBINED QUERIES
-$query = $fs_query->query("#Portfolio > directory, #websites #index.html");
+$results = $fs_query->query("#Portfolio > directory, #websites #index.html");
 ```
 
 (TIP)
