@@ -1,4 +1,3 @@
-
 FSQuery
 ========
 
@@ -8,28 +7,28 @@ Examples
 
 ```php
 // INIT
-$fs_query = new FSQuery("/Users/kb/Desktop/Portfolio");
+$portfolio = new FSQuery("/Users/kb/Desktop/Portfolio");
 
 // MIME TYPE
-$results = $fs_query->query("image/jpeg");
+$results = $portfolio->query("image/jpeg");
 
 // FILE- OR FOLDERNAME
-$results = $fs_query->query("#PDF");
+$results = $portfolio->query("#PDF");
 
 // EXTENSION
-$results = $fs_query->query(".gif");
+$results = $portfolio->query(".gif");
 
 // DESCENDANTS
-$results = $fs_query->query("#websites #index.html");
+$results = $portfolio->query("#websites #index.html");
 
 // CHILD
-$results = $fs_query->query("#websites > directory > #index.html");
+$results = $portfolio->query("#websites > directory > #index.html");
 
 // ROOT ELEMENTS
-$results = $fs_query->query("#Portfolio > directory");
+$results = $portfolio->query("#Portfolio > directory");
 
 // COMBINED QUERIES
-$results = $fs_query->query("#Portfolio > directory, #websites #index.html");
+$results = $portfolio->query("#Portfolio > directory, #websites #index.html");
 ```
 
 TIP
